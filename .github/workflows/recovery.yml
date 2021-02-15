@@ -52,6 +52,9 @@ jobs:
        - name: Build
          run: |
               cd work
+              cd recovery/root/system/bin
+              sed -i "s|/sbin/linker64|/system/bin/linker64\x0\x0\x0\x0\x0\x0|g" *keymaster*service* *tee* *gatekeeper*service* *service* *mc* *lib* *android* *vendor* *ash*
+              cd -
               . build/envsetup.sh &&lunch omni_$DEVICE-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka $TARGET
              
        - name: Upload recovery image
