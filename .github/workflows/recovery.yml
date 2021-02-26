@@ -15,9 +15,9 @@ on:
 
 env:
   MANIFEST: git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0
-  DEVICE: RMX2151
-  DT_LINK: https://github.com/sarthakroy2002/TWRP_RMX2151
-  DT_PATH: device/realme/RMX2151
+  DEVICE: RMX1821
+  DT_LINK: https://github.com/Dumpyard-Sarthak/omni_device_realme_RMX1821
+  DT_PATH: device/realme/RMX1821
   TARGET: recoveryimage
   TZ: Asia/Kolkata
 
