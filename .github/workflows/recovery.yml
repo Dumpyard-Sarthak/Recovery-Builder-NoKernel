@@ -52,7 +52,7 @@ jobs:
        - name: Build
          run: |
               cd work
-              . build/envsetup.sh &&lunch omni_RMX2151-eng &&export ALLOW_MISSING_DEPENDENCIES=true && mka recoveryimage
+              . build/envsetup.sh && lunch omni_RMX1821-userdebug &&export ALLOW_MISSING_DEPENDENCIES=true && mka recoveryimage
              
        - name: Upload recovery image
          run: |
